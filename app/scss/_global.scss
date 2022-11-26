@@ -1,0 +1,48 @@
+body{
+  font-family: $Roboto;
+  font-size: 16px;
+  background: $background;
+  color: $textColor;
+}
+
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex: 0 0 auto;
+}
+
+.container{
+  margin: 0 auto;
+  @media screen and (min-width: 1400px) {
+    max-width: 1360px;
+  }
+  @media screen and (max-width: 1399px){
+    max-width: 1140px;
+  }
+  @media screen and (max-width: 1199px){
+    max-width: 960px;
+  }
+  @media screen and (max-width: 1199px){
+    max-width: 960px;
+  }
+  @media screen and (max-width: 991px){
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  @media screen and (max-width: 767px){
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 575px){
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+

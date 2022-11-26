@@ -1,0 +1,142 @@
+.contacts {
+    padding-top: 99px;
+    padding-bottom: 65px;
+    margin-bottom: 90px;
+    background: $white;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    &__text{
+        margin-top: 22px;
+    }
+    &__info {
+        margin-top: 42px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 45px;
+    }
+
+    &__adresses{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__adress { 
+        &_link{
+            color: #337AB7;
+        }
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__phone {
+        span{
+            color: #999999;
+        }
+        a{
+            color: #79509A;
+        }
+    }
+
+    &__mails {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__mail {
+        a{
+            color: #337AB7;
+        }
+    }
+
+    &__schedule {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+
+    &__schedule-item {
+    }
+
+    &__map {
+        width: 1001px;
+        height: 570px;
+    }
+    @media screen and (max-width: 1399px) {
+        &__map{
+            width: 800px;
+        }
+    }
+    @media screen and (max-width: 1199px){
+        &__map{
+            width: 650px;
+        }
+    }
+    @media screen and (max-width: 991px){
+        padding-top: 33px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        &__row{
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        &__info{
+            margin-top: 33px;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 34px;
+        }
+        &__schedule{
+            margin-top: 12px;
+        }
+        &__map{
+            position: relative;
+            left: -30px;
+            margin-top: 54px;
+            width: 100vw;
+        }
+    }
+    @media screen and (max-width: 767px){
+        &__map{
+            left: -20px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        padding-top: 15px;
+        padding-bottom: 23px;
+        margin-bottom: 26px;
+        &__info{
+            margin-top: 43px;
+            grid-template-columns: 1fr;
+        }
+        &__map{
+            margin-top: 41px;
+            left: -15px;
+        }
+        &__phone{
+            & > .display-block{
+                margin-top: 8px;
+                display: block;
+            }
+        }
+        &__mails{
+            margin-top: -3px;
+        }
+        &__schedule{
+            margin-top: -7px;
+            row-gap: 10px;
+        }
+    }
+}
+

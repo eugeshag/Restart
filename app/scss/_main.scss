@@ -1,0 +1,343 @@
+.main {
+  padding-bottom: 105px;
+  &__screen{
+    position: relative;
+  }
+  &__slider {
+    height: 866px;
+    width: 100%;
+    position:relative;
+    overflow:hidden;
+  }
+
+  &__card{
+    width: 280px;
+    background: $white;
+    position: absolute;
+    padding: 32px 20px 37px 29px;
+    top: calc(50% + 15px);
+    transform: translateY(-50%);
+    z-index: 25;
+    &_left{
+      left: 0;
+
+    }
+    &_right{
+      right: 0;
+    }
+  }
+  &__card-logo{
+    margin-top: 5px;
+    display: inline-block;
+
+  }
+  &__card-title{
+    margin-left: 2px;
+    display: inline-block;
+    max-width: 172px;
+    line-height: 22px;
+    color: $textColorLight;
+  }
+  &__card-button{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 19px;
+    color: $textColor;
+    margin-top: 32px;
+    border: 1px solid #CECECE;
+    border-radius: 100px;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+      background-color: $textColor;
+      color: $white;
+      border-width: 0;
+    }
+    &:active{
+      background: $white;
+      color: $textColor;
+      border-width: 3px;
+    }
+  }
+
+  &__row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-top: 74px;
+    height: 67px;
+    text-align: center;
+  }
+
+  &__label {
+    margin-top: 26px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__links {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 17px;
+  }
+
+  &__link {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__link-img{
+    width: 100%;
+  }
+
+  &__link-text{
+    padding: 28px 43px 40px 43px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+  &__link-title{
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    color: $textColor;
+  }
+  &__link-line{
+    margin-top: 16px;
+    background: #E2E2E2;
+    width: 100%;
+    height: 2px;
+  }
+  &__link-subtitle{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: $textColorLight;
+  }
+
+  &__about {
+    text-align: center;
+    max-width: 811px;
+    margin: 47px auto 0 auto;
+    line-height: 24px;
+  }
+  @media screen and (max-width: 1199px) {
+    &__slider{
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding-bottom: 31px;
+    &__slider{
+      display: none;
+    }
+    &__screen{
+      padding: 0 43px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 29px;
+    }
+    &__card{
+      padding: 41px 38px 41px 38px;
+      width: auto;
+      height: auto;
+      position: static;
+      transform: none;
+      border-radius: 5px;
+    }
+
+    &__card-logo{
+      margin-top: 0;
+      height: 47.33px;
+    }
+
+    &__card-title{
+      max-width: 195px;
+      margin-left: 4px;
+      line-height: 22px;
+    }
+
+    &__card-button{
+      height: 56px;
+      margin: 18px auto 0 auto;
+      width: 225px;
+      border-radius: 100px;
+    }
+
+    &__row{
+      padding: 0 13px;
+    }
+
+    &__logo{
+      margin-top: 60px;
+    }
+
+    &__label{
+      margin-top: 9px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &__links{
+      margin-top: 21px;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 28px;
+      row-gap: 26px;
+    }
+    &__link{
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    &__link-text{
+      padding: 9px 22px 23px 22px;
+    }
+
+    &__link-title{
+      line-height: 26px;
+    }
+
+    &__link-line{
+      margin-top: 12px;
+    }
+
+    &__link-subtitle{
+      margin-top: 18px;
+    }
+
+    &__about{
+      margin-top: 23px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    &__screen{
+      padding: 0 20px;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+    &__row{
+      padding: 0;
+    }
+    &__card-title{
+      max-width: 253px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 7px;
+    padding-bottom: 25px;
+    &__screen{
+      padding: 0 15px;
+    }
+
+    &__card{
+      padding: 32px 34px 37px 34px;
+    }
+    &__card-logo{
+      margin-top: 5px;
+      height: 42px;
+    }
+    &__card-title{
+      margin-left: 3px;
+      max-width: 172px;
+    }
+    &__card-button{
+      margin-top: 12px;
+      width: 200px;
+      height: 50px;
+    }
+    &__logo{
+      margin-top: 49px;
+    }
+    &__label{
+      margin-top: 19px;
+    }
+    &__links{
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+    }
+    &__link-text{
+      padding: 7px 20px 18px 20px;
+    }
+    &__link-line{
+      margin-top: 8px;
+    }
+    &__link-subtitle{
+      text-align: center;
+      margin-top: 13px;
+    }
+    &__about{
+      margin-top: 34px;
+    }
+  }
+}
+
+.slider {
+  img{
+    width:100%;
+    display:block;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  &__image-before {
+    position:absolute;
+    height:100%;
+    width:50%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:1;
+  }
+
+  &__image-after {
+    display:block
+  }
+
+  &__resizer {
+    cursor: pointer;
+    position:absolute;
+    display:flex;
+    align-items:center;
+    z-index:2;
+    top:0;
+    left:50%;
+    height:100%;
+    width:1px;
+    background:white;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    &:after{
+      content: url("../img/slider_button.svg");
+      background: #FF0000;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      position:absolute;
+      top: calc(50% - 15px);
+      width:67px;
+      height:67px;
+      border-radius:50%;
+      transform: translateX(-50%);
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    &:after{
+      top: 50%;
+      width:67px;
+      height:67px;
+      border-radius:50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+

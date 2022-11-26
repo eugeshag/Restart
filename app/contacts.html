@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restart - Контакти</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body data-id-page="contacts">
+    <div class="wrapper">
+        @@include('./components/header.html')
+        <main class="contacts">
+            <div class="container">
+                <div class="contacts__row">
+                    <div class="contacts__text">
+                        <div class="contacts__title">Контактна інформація</div>
+                        <div class="contacts__info">
+                            <div class="contacts__adresses">
+                                <div class="contacts__adress">Адреса офісу:</div>
+                                <div class="contacts__adress">Івана Підкови, 17г</div>
+                                <div class="contacts__adress">Рівне, Рівненська область, 33000</div>
+                                <a href="#" class="contacts__adress_link">адреси сервісно-технічних центрів</a>
+                            </div>
+                            <div class="contacts__phones">
+                                <div class="contacts__phone">0362 46 0443</div>
+                                <div class="contacts__phone">0800 21 4343 <span>(безкоштовно)</span></div>
+                                <div class="contacts__phone">+38 067 362 4343 <a href="#">(viber)</a></div>
+                                <div class="contacts__phone">067 208 34 70 <span class="display-block">(Регіональний менеджер)</span></div>
+                            </div>
+                            <div class="contacts__mails">
+                                <div class="contacts__mail">пошта: <a href="mailto:info@restart.ua">info@restart.ua</a>
+                                </div>
+                                <div class="contacts__mail">facebook: <a href="#">restart.ua</a></div>
+    
+    
+                            </div>
+                            <div class="contacts__schedule">
+                                <div class="contacts__schedule-item">Розклад роботи офісу:</div>
+                                <div class="contacts__schedule-item">Пн-Пт – з 9:00 до 18:00</div>
+                                <div class="contacts__schedule-item">Субота – з 9:00 до 14:00</div>
+                                <div class="contacts__schedule-item">Неділя – вихідний день</div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe class="contacts__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40490.443490511745!2d26.15090955820313!3d50.633567899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f6ca1e16cb891%3A0x697e5c350a49d49b!2sReStart!5e0!3m2!1sru!2sua!4v1669451459055!5m2!1sru!2sua"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+        @@include('./components/footer.html')
+    </div>
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

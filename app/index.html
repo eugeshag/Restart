@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Restart</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.min.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body data-id-page="main">
+		<div class="wrapper">
+			@@include('./components/header.html')
+			<main class="main">
+				<div class="main__screen">
+					<div class="main__slider slider">
+						<div class="slider__image-before">
+							<img src="./img/before_image_slider_test.jpg" alt="" draggable="false"/>
+						</div>
+						<div class="slider__image-after">
+							<img src="./img/after_image_slider.jpg" alt="" draggable="false"/>
+						</div>
+						<div class="slider__resizer"></div>
+					</div>
+					<div class="main__card main__card_left">
+						<img src="./img/main_card_logo_left.svg" alt="" class="main__card-logo">
+						<div class="main__card-title">Діагностика та ремонт
+							стартерів, генераторів,
+							кондиціонерів</div>
+						<a href="./chain.html" class="main__card-button">Мережа сервісів</a>
+					</div>
+					<div class="main__card main__card_right">
+						<img src="./img/main_card_logo_right.svg" alt="" class="main__card-logo">
+						<div class="main__card-title">Продаж стартерів,
+							генераторів
+							та компонентів</div>
+						<a href="./shop.html" class="main__card-button">Перейти в магазин</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="main__row">
+						<img src="./img/logo.svg" alt="" class="main__logo">
+						<div class="main__label">Справжні професіонали на ринку стартерів та генераторів</div>
+						<div class="main__links">
+							<a href="./chain.html" class="main__link">
+								<img src="./img/main_link_img1.jpg" alt="" class="main__link-img">
+								<div class="main__link-text">
+									<div class="main__link-title">
+										Мережа СТЦ
+									</div>
+									<div class="main__link-line"></div>
+									<div class="main__link-subtitle">
+										Ремонт стартерів, <br/>
+										генераторів, кондиціонерів
+									</div>
+								</div>
+							</a>
+							<a href="./shop.html" class="main__link">
+								<img src="./img/main_link_img2.jpg" alt="" class="main__link-img">
+								<div class="main__link-text">
+									<div class="main__link-title">
+										Інтернет-магазин
+									</div>
+									<div class="main__link-line"></div>
+									<div class="main__link-subtitle">
+										Понад 15 000 позицій <br/>
+										агрегатів та компонентів
+									</div>
+								</div>
+							</a>
+							<a href="./solutions.html" class="main__link">
+								<img src="./img/main_link_img3.jpg" alt="" class="main__link-img">
+								<div class="main__link-text">
+									<div class="main__link-title">
+										Готові рішення
+									</div>
+									<div class="main__link-line"></div>
+									<div class="main__link-subtitle">
+										Готові рішення <br/>
+										в стар-ген сегменті для СТО
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="main__about">
+							У нас представлений широкий асортимент запчастин та комплектуючих для вантажних та легкових авто,
+							сільськогосподарських
+							машин, водомоторної техніки, а також мотоциклів та промислового сектору ринку.
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('./components/footer.html')
+		</div>
+		<script src="js/main.min.js"></script>
+	</body>
+</html>
